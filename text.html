@@ -305,3 +305,163 @@ Estados del Enlace
 :hover: Este estado se aplica cuando un usuario está manteniendo su cursor sobre un enlace. Este estado es útil para proporcionar atención extra a un enlace, para asegurar que un usuario realmente tiene la intención de hacer clic en él.
 :focus: Este estado se aplica cuando enfocamos un enlace.
 :active: Este estado se aplica a los enlaces que están siendo activados por el usuario. Esto típicamente significa hacer clic en el enlace con el botón principal del mouse haciendo clic izquierdo, en la mayoría de los casos.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+HTML semantico
+
+Encabezado
+<header>
+  <h1>CatPhotoApp</h1>
+  <p>Welcome to our cat gallery.</p>
+</header>
+
+Elemento principal: se usa para contener el contenido principal de la página web.
+<main>
+  <section>
+    <h2>Cat Photos</h2>
+    <p>Browse adorable cat pictures.</p>
+  </section>
+</main>
+
+Elemento de sección: se utiliza para dividir el contenido en secciones más pequeñas
+<section>
+  <h2>About Me</h2>
+  <p>Hi, I am Jane Doe and I am a web developer.</p>
+</section>
+
+sección de navegación (nav): representa una sección con enlaces de navegación.
+<nav>
+  <ul>
+    <li><a href="#photos">Photos</a></li>
+    <li><a href="#videos">Videos</a></li>
+  </ul>
+</nav>
+
+Elemento figura: se utiliza para contener ilustraciones y diagramas.
+<figure>
+  <img
+    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+    alt="Two tabby kittens sleeping together on a couch."
+  />
+  <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+</figure>
+
+ énfasis (em): marca texto que tiene énfasis de estrés.
+ <p>
+  Never give up on <em>your</em> dreams.
+</p>
+
+texto idiomático (i):resalta voces o estados de ánimo alternativos, términos idiomáticos de otro idioma, términos técnicos y pensamientos.
+<p>
+  There is a certain <i lang="fr">je ne sais quoi</i> in the air.
+</p>
+
+importancia fuerte (strong): marca texto que tiene gran importancia.
+<p>
+  <strong>Warning:</strong> This product may cause allergic reactions.
+</p>
+
+ atraer atención (b):llama la atención sobre texto que no es importante para el significado del contenido. 
+ Se utiliza comúnmente para resaltar palabras clave en resúmenes o nombres de productos en reseñas.
+ <p>
+  We tested several products, including the <b>SuperSound 3000</b> for audio quality, the <b>QuickCharge Pro</b> for fast charging, and the <b>Ecoclean Vacuum</b> for cleaning. The first two performed well, but the <b>Ecoclean Vacuum</b> did not meet expectations.
+</p>
+
+Lista de descripciones (dl): Representa una lista de agrupaciones término-descripción.
+Término de descripción (dt): Representa el término que se está definiendo.
+Detalles de descripción (dd): Representa la descripción del término.
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets</dd>
+</dl>
+
+cita en bloque (blockquote): Representa una sección que se cita de otra fuente. Este elemento tiene un atributo cite.
+ El valor del atributo cite es la URL de la fuente.
+ <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+  "Can you imagine what it would be like to be a successful developer? To have built software systems that people rely upon?"
+</blockquote>
+
+citación (cite): Atribuye la fuente del trabajo referenciado visualmente. Marca el título de la referencia.
+<div>
+  <blockquote cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+    "Can you imagine what it would be like to be a successful developer? To have built software systems that people rely upon?"
+  </blockquote>
+  <p>
+    -Quincy Larson, <cite>How to learn to Code and Get a Developer Job [Full Book].</cite>
+  </p>
+</div>
+
+cita en línea (q): Representa una cita en línea breve.
+<p>
+  As Quincy Larson said,
+  <q cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+    Momentum is everything.
+  </q>
+</p>
+
+ abreviatura (abbr): Representa una abreviatura o acrónimo.
+ <p>
+  <abbr title="HyperText Markup Language">HTML</abbr> is the foundation of the web.
+</p> 
+
+Dirección de contacto (address): Representa la información de contacto.
+(Fecha) Tiempo (time): Representa una fecha y/o hora. El atributo datetime se utiliza para traducir fechas y horas a un formato legible por máquina.
+<p>
+  The reservations are for the <time datetime="20:00">20:00 </time>
+</p>
+
+Atributo de fecha ISO 8601 (datetime): se usa para representar fechas y horas en un formato legible por máquina. 
+El formato estándar es YYYY-MM-DDThh:mm:ss, con la T mayúscula como separador entre la fecha y la hora.
+Elemento de superíndice (sup): se usa para representar texto en superíndice. 
+Los casos de uso comunes para el elemento sup incluirían exponentes, letras superiores y números ordinales.
+<p>
+  2<sup>2</sup> (2 squared) is 4.
+</p>
+
+subíndice (sub): se usa para representar texto en subíndice. 
+<p>
+  CO<sub>2</sub>
+</p>
+
+Elemento de código en línea (code): se usa para representar un fragmento de código de computadora.
+Elemento de texto preformateado (pre): representa texto preformateado.
+<pre>
+  <code>
+    body {
+      color: red;
+    }
+  </code>
+</pre>
+
+anotación no articulada (u): se usa para representar un fragmento de texto en línea que debe renderizarse de manera que indique que tiene una anotación no textual.
+<p>
+  You can use the unarticulated annotation element to highlight
+  <u>inccccort</u> <u>spling</u> <u>issses</u>.
+</p>
+
+
+Anotación en ruby (ruby): Anota texto con pronunciaciones o explicaciones de significado. Un uso de ejemplo es para tipografía de Asia oriental.
+Paréntesis de caída de ruby (rp): Sustituye para navegadores que no tienen soporte para mostrar anotaciones de ruby.
+Texto ruby (rt): Indica texto para la anotación ruby. Normalmente se utiliza para pronunciación, o detalles de traducción en la tipografía de Asia oriental.
+<ruby>
+  明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp>
+</ruby>
+
+tachado (s): se usa para representar contenido que ya no es preciso o relevante.
+<p>
+  <s>Tomorrow's hike will be meeting at noon.</s>
+</p>
+<p>
+  Due to unforeseen weather conditions, the hike has been canceled.
+</p>
+
+Enlaces internos: se usan para enlazar a otra sección de la página usando href="#id" en un elemento a y asignando al elemento de destino el mismo id. Esto se usa comúnmente para enlaces de salto, tablas de contenido o páginas largas con múltiples secciones.
+<a href="#about-section">Go to About Section</a>
+
+<section id="about-section">
+  <h2>About</h2>
+  <p>This is the about section of the page.</p>
+</section>
